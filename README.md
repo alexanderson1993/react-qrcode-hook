@@ -27,7 +27,7 @@ only parameter to the hook function is the string you want to codify.
 import useQrCode from "react-qrcode-hook";
 
 function App() {
-  useQrCode("Hello There");
+  const qrCode = useQrCode("Hello There");
   return (
     <div
       style={{
