@@ -1,6 +1,6 @@
 # `React QRCode Hook` 📸
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 > React hook for creating QR Code data urls
 
@@ -119,8 +119,7 @@ Thanks goes to these wonderful people
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/6558157?v=4" width="100px;"/><br /><sub><b>Alex</b></sub>](https://ralexanderson.com)<br />[💻](https://github.com/alexanderson1993/react-qrcode-hook/commits?author=alexanderson1993 "Code") |
-| :---: |
+<table><tr><td align="center"><a href="https://ralexanderson.com"><img src="https://avatars1.githubusercontent.com/u/6558157?v=4" width="100px;" alt="Alex"/><br /><sub><b>Alex</b></sub></a><br /><a href="https://github.com/alexanderson1993/react-qrcode-hook/commits?author=alexanderson1993" title="Code">💻</a></td><td align="center"><a href="http://donavon.com"><img src="https://avatars3.githubusercontent.com/u/887639?v=4" width="100px;" alt="Donavon West"/><br /><sub><b>Donavon West</b></sub></a><br /><a href="https://github.com/alexanderson1993/react-qrcode-hook/commits?author=donavon" title="Code">💻</a> <a href="https://github.com/alexanderson1993/react-qrcode-hook/commits?author=donavon" title="Documentation">📖</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
