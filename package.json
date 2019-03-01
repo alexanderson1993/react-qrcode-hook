@@ -18,6 +18,7 @@
     "index.*"
   ],
   "scripts": {
+    "test": "echo \"there are no tests and that... ok (for now)\"",
     "example": "parcel example.html",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
