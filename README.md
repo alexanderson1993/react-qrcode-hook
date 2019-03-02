@@ -1,6 +1,6 @@
 # `React QRCode Hook` 📸
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 > React hook for creating QR Code data urls
 
@@ -21,7 +21,7 @@ npm install --save react-qrcode-hook
 ## Usage
 
 This hook returns a data URL which can be added as the source to an image. The
-only parameter to the hook function is the string you want to codify.
+only parameter to the hook function requires is the string you want to codify.
 
 ```js
 import useQrCode from "react-qrcode-hook";
@@ -43,6 +43,58 @@ function App() {
   );
 }
 ```
+
+This will produce a QR Code as follows.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/29359616/53666334-dbcea200-3c3b-11e9-9565-96d30151bf43.png" width="86" />
+</p>
+
+## Advanced
+
+You can also pass an `options` object as a second parameter to the hook as follows.
+You can see a [complete list of options](https://www.npmjs.com/package/qrcode#qr-code-options) here.
+
+```js
+const qrCode = useQrCode(text, options);
+```
+
+And here is some sample code that uses `options`.
+
+
+```js
+const options = {
+  margin: 5,
+  scale: 10,
+  color: {
+    dark: '#ffffff',
+    light: '#000099',
+  },
+};
+
+function App() {
+  const qrCode = useQrCode('https://americanexpress.io', options);
+  return (
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <img alt="qr code" src={qrCode} />
+    </div>
+  );
+}
+```
+
+The code above produces this QR Code. Notice how it changed the colors, size, and padding of the image?
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/29359616/53666074-23086300-3c3b-11e9-9c2d-8289219fe30e.png" width="350" />
+</p>
 
 ## Example
 
@@ -67,8 +119,7 @@ Thanks goes to these wonderful people
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/6558157?v=4" width="100px;"/><br /><sub><b>Alex</b></sub>](https://ralexanderson.com)<br />[💻](https://github.com/alexanderson1993/react-qrcode-hook/commits?author=alexanderson1993 "Code") |
-| :---: |
+<table><tr><td align="center"><a href="https://ralexanderson.com"><img src="https://avatars1.githubusercontent.com/u/6558157?v=4" width="100px;" alt="Alex"/><br /><sub><b>Alex</b></sub></a><br /><a href="https://github.com/alexanderson1993/react-qrcode-hook/commits?author=alexanderson1993" title="Code">💻</a></td><td align="center"><a href="http://donavon.com"><img src="https://avatars3.githubusercontent.com/u/887639?v=4" width="100px;" alt="Donavon West"/><br /><sub><b>Donavon West</b></sub></a><br /><a href="https://github.com/alexanderson1993/react-qrcode-hook/commits?author=donavon" title="Code">💻</a> <a href="https://github.com/alexanderson1993/react-qrcode-hook/commits?author=donavon" title="Documentation">📖</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
