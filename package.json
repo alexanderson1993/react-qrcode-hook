@@ -1,6 +1,6 @@
 {
   "name": "react-qrcode-hook",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React hook for creating QR Code data urls",
   "main": "index.js",
   "repository": "https://github.com/alexanderson1993/react-qrcode-hook",
